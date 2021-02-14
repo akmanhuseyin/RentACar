@@ -10,11 +10,25 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
-            //customerManager.Add(new Entities.Concrete.Customer() { CompanyName = "SunExpress" });
+            UserManager userManager = new UserManager(new EfUserDal());
+            //User user = new User { FirstName = "İsimA", LastName = "SoyisimA", Email = "aMail@outlook.com", Password = "1234" };
+            //userManager.Add(user);
+
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            //customerManager.Add(new Customer { UserId = (userManager.GetById(user.Id).Data.Id), CompanyName = "Şirket ABC" });
+
+            foreach (var item in customerManager.GetAll().Data)
+            {
+                Console.WriteLine(item.UserId +" /// "+ item.CompanyName);
+            }
+
+            foreach (var item in userManager.GetAll().Data)
+            {
+                Console.WriteLine(item.Id+"///"+item.FirstName + " /// " + item.LastName);
+            }
 
 
-            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            //RentalManager rentalManager = new RentalManager(new EfRentalDal());
             //var addResult = rentalManager.Add(new Rental() { CarId = 3, CustomerId = 1, RentDate = DateTime.Now });
 
             //if (addResult.Success)
@@ -28,7 +42,6 @@ namespace ConsoleUI
             //{
             //    Console.WriteLine(addResult.Message);
             //}
-            rentalManager.GetById(1).Data.
 
 
             //CarTest();
