@@ -27,6 +27,11 @@ namespace Business.Constants
         public static string CarListed = "Arabalar listelendi.";
         public static string CarDailyPriceInvalid = "Araba günlük ücreti geçersiz.";
 
-
+        // CarImage things.
+        public static string CarImageAdded = "Araba resmi Eklendi.";
+        public static string CarImageDeleted = "Araba resmi Silindi.";
+        public static string CarImageUpdated = "Araba resmi Güncellendi.";
+        public static string CarImageListed = "Araba resimleri listelendi.";
+        public static string CarImageLimitExceded = "Resim limiti aşıldığı için yeni resim eklenemiyor.";
     }
 }
