@@ -23,7 +23,6 @@ namespace WebAPI.Controllers
 
 
         [HttpGet("getall")]
-        [Authorize(Roles ="Product.List")] // sisteme giriş yaptıysa ve list yetkisi varsa.
         public IActionResult GetAll()
         {
             var result = _carService.GetAll();
