@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\UploadsCarImages2\**" />
+    <Content Remove="wwwroot\UploadsCarImages2\**" />
+    <EmbeddedResource Remove="wwwroot\UploadsCarImages2\**" />
+    <None Remove="wwwroot\UploadsCarImages2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.11" />
   </ItemGroup>

@@ -27,6 +27,8 @@ namespace Business.Constants
         public static string CarUpdated = "Araba Güncellendi.";
         public static string CarListed = "Arabalar listelendi.";
         public static string CarDailyPriceInvalid = "Araba günlük ücreti geçersiz.";
+        public static string GetSuccessCarMessage = "Araç bilgisi / bilgileri getirildi.";
+        public static string GetErrorCarMessage = "Araç bilgisi / bilgileri getirilemedi.";
 
         // CarImage things.
         public static string CarImageAdded = "Araba resmi Eklendi.";
@@ -43,6 +45,33 @@ namespace Business.Constants
         public static string UserRegistered = "Kullanıcı başarıyla kaydedildi.";
         public static string AccessTokenCreated = "Token oluşturuldu.";
         public static string AuthorizationDenied = "Yetkiniz yok.";
+
+        //CarImage
+
+        public static string AddCarImageMessage = "Araç resmi başarıyla eklendi";
+        public static string EditCarImageMessage = "Araç resmi başarıyla güncellendi";
+        public static string DeleteCarImageMessage = "Araç resmi başarıyla silindi";
+        public static string AboveImageAddingLimit = "Araç maksimum resim sayısına ulaştı. Resim ekleyemezsiniz";
+        public static string IncorrectFileExtension = "Kabul edilmeyen dosya uzantısı";
+        public static string ImageNotFound = "Resim dosyası bulunamadı.";
+        public static string CarImageNotFound = "Değiştirilmek istenen resim bulunamadı.";
+
+        //Rental
+        public static string AddRentalMessage = "Araç kiralama işlemi başarıyla eklendi.";
+
+        public static string DeleteRentalMessage = "Araç kiralama işlemi başarıyla silindi.";
+        public static string EditRentalMessage = "Araç kiralama işlemi başarıyla güncellendi.";
+        public static string GetSuccessRentalMessage = "Araç kiralama işlemi bilgisi / bilgileri getirildi.";
+        public static string GetErrorRentalMessage = "Araç kiralama işlemi bilgisi / bilgileri getirilemedi.";
+        public static string CarAvaible = "Araç kiralanmaya uygundur.";
+        public static string CarNotAvaible = "Araç kiralanmaya uygun değildir.";
+        public static string CarNotDeliverTheCar = "Araç teslim almaya uygun değildir.";
+        public static string CarDeliverTheCar = "Araç teslim alındı.";
+        public static string ErrorRentalFKMessage = "Müşteri ve araba alanlarını tekrar kontrol ediniz..";
+
+        public static string InsufficientBalance = "Yetersiz bakiye";
+        public static string PaymentCompleted = "Ödeme yapıldı";
+
 
     }
 }

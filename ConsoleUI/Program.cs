@@ -84,13 +84,13 @@ namespace ConsoleUI
             }
         }
 
-        private static void CarTest()
-        {
-            CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var item in carManager.GetAll().Data)
-            {
-                Console.WriteLine("{0} | {1} | {2} TL", item.Description, item.ModelYear, item.DailyPrice);
-            }
-        }
+        //private static void CarTest()
+        //{
+        //    CarManager carManager = new CarManager(new EfCarDal());
+        //    foreach (var item in carManager.GetAll().Data)
+        //    {
+        //        Console.WriteLine("{0} | {1} | {2} TL", item.Description, item.ModelYear, item.DailyPrice);
+        //    }
+        //}
     }
 }

@@ -37,7 +37,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddCors(options => options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:3000")));
+            services.AddCors(options => options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:4200")));
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
@@ -67,7 +67,7 @@ namespace WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader());//3000 den gelen bütün þeylere izin ver.
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());//4200 den gelen bütün þeylere izin ver.
 
             app.UseHttpsRedirection();
 
